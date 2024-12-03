@@ -6,3 +6,14 @@
     --radius: 0.5rem
   }
 }
+
+.bn-editor {
+  padding-top : 20px;
+}
+
+@media (max-width: 768px) {
+  .bn-editor {
+    padding-inline : 10px !important;
+    padding-top : 20px;
+  }
+}
