@@ -3,6 +3,7 @@
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react"
 import { useUser } from "@clerk/nextjs"
 import Breadcrumbs from "./BreadCrumbs"
+import React from "react"
 
 const Header = () => {
   const {user} = useUser()  

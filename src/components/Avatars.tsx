@@ -8,6 +8,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import React from "react";
 
 const Avatars = () => {
   const others = useOthers();
@@ -19,7 +20,7 @@ const Avatars = () => {
     <div className="flex justify-end gap-2 items-center">
       <p className="font-light text-xs md:text-sm lg:text-sm">Users currently editing this page</p>
       <div className="flex -space-x-5">
-        {all.map((other, i) => (
+        {all.map((other:any, i) => (
           <TooltipProvider key={other?.id + i}>
             <Tooltip>
               <TooltipTrigger>
